@@ -80,10 +80,9 @@ const Dashboard = () => {
         />
       </div>
 
-      {/* SECTION 1: Popular Stocks (Cards) - Only hide this if they are searching for something specific */}
       {searchTerm === '' && (
         <div style={{ marginBottom: '3rem' }}>
-          <h4 style={{ margin: '0 0 1.5rem 0', color: '#2c3e50', fontSize: '1.2rem' }}>🔥 Popular Right Now</h4>
+          <h4 style={{ margin: '0 0 1.5rem 0', color: '#2c3e50', fontSize: '1.2rem' }}>Popular Right Now</h4>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
             {popularStocks.map((stock) => {
               const isProfit = stock.change >= 0;
